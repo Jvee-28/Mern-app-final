@@ -1,0 +1,6 @@
+/* Extra polish styles */
+.header h1 { letter-spacing: 0.4px; }
+.card { transition: transform 160ms ease, box-shadow 160ms ease; }
+.card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(16,24,40,0.08); }
+.btn { box-shadow: 0 6px 18px rgba(16,24,40,0.04); }
+.logo { height:48px; width:auto; }

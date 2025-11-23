@@ -1,0 +1,18 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install server deps
+        run: |
+          cd server
+          npm install
+      - name: Install client deps
+        run: |
+          cd client
+          npm install
